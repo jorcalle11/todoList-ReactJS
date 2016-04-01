@@ -24,6 +24,11 @@ gulp.task('html', function() {
   .pipe(connect.reload());
 });
 
+gulp.task('css', function() {
+  gulp.src(files.css)
+  .pipe(connect.reload());
+});
+
 gulp.task('bower',function() {
   gulp.src(files.html)
   .pipe(wiredep())
@@ -47,6 +52,7 @@ gulp.task('transpile-js', function() {
 
 gulp.task('watch', function() {
   gulp.watch(files.html, ['html']);
+  gulp.watch(files.css, ['css']);
   gulp.watch(['./bower.json'],['bower']);
   gulp.watch([files.js[0]],['transpile-js','inject']);
 });

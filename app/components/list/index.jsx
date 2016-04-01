@@ -26,10 +26,10 @@ var List = React.createClass({
   render: function(){
     return (
       <span>
-        <ul>
+        <ul className="collection z-depth-3">
           {
             this.state.tasks.map(function(task,id) {
-              return <Row key={id} row={task.row}/>
+              return <Row key={id} id={task.id} row={task.row}/>
             })
           }
         </ul>
@@ -41,9 +41,10 @@ var List = React.createClass({
 var Row = React.createClass({
   render: function() {
     return (
-      <li>
+      <a className="collection-item">
         {this.props.row}
-      </li>
+        <span className="badge">{this.props.id}</span>
+      </a>
     );
   }
 });
