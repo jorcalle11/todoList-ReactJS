@@ -1,0 +1,26 @@
+{
+  "name": "todolist-reactjs",
+  "description": "simple todo list con reactjs",
+  "main": "index.html",
+  "authors": [
+    "Jorge Calle"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "todolist"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^0.14.8",
+    "jquery": "^2.2.2"
+  }
+}

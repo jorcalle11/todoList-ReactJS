@@ -1,0 +1,18 @@
+[
+	{
+		"id":0,
+		"row": "Leer la documentación"
+	},
+	{
+		"id":1,
+		"row": "Completar Tutoriales"
+	},
+	{
+		"id":2,
+		"row": "Crear un Demo"
+	},
+	{
+		"id":3,
+		"row": "Escribir sobre lo que aprendiste"
+	}
+]
